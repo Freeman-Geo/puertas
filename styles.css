@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: orangered;
+    color: black;
+}
+
+body{
+    margin: 20px;
+    width: 100vw;
+    background-image: linear-gradient(90deg, black, white,black,white,black,white,#bbb,#ccc,#aaa,black);
+}
+
+.puertas-container{
+    width: 100%;
+    height: max-content;
+}
+
+.panel-der--container{
+    width: 80px;
+    height: 200px;
+    border: 2px solid white;
+    position: absolute;
+    right: 2vw;
+    top: 35vh;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, black, white, black, black, #aaa, #ccc, #bbb,black,white,black,white,#bbb,#ccc,#aaa);
+}
+
+.boton{
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 22px;
+    background-image: linear-gradient(60deg, black, #aaa, #ccc, #bbb,black,white,black,white,#bbb,#ccc,#aaa);
+    cursor: pointer;
+}
+
+.boton1{
+    top: 150px;
+}
+
+.boton2{
+    top: 89px;
+}
+
+.boton3{
+    top: 30px;
+}
+
+.puerta{
+    height: 92.5vh;
+    width: 42.5vw;
+    border: 3px solid white;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 100;
+    transition: all 2.5s;
+    background-image: linear-gradient(100deg, black, #555, #222, #555,black,white,black,#333,#555,#222,#aaa);
+}
+
+.puerta-der{
+    right: 13vw;
+}
+
+.puerta-izq{
+    left: 2vw;
+}
+
+.top-menu-container{
+    width: 80vw;
+    height: 3vw;
+    position: absolute;
+    top: 3px;
+    left: 5vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu{
+    width: 28%;
+    height: 4vw;
+    background-color: #000;
+    border-radius: 15px;
+    border: 3px solid #111;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.mundos-container{
+    position: absolute;
+}
+
+.title-mundo{
+    position: absolute;
+    padding: 30px;
+    width: 83vw;
+    height: 92vh;
+    left: 1.6vw;
+    top: 4.6vh;
+    margin: 20px;
+    color: white;
+}
+
+.title-mundo1{
+    background-color: rgb(48, 3, 3);
+}
+
+.title-mundo2{
+    background-color: #111;
+}
+
+.title-mundo3{
+    background-color: darkblue;
+}
+
+/** Formuolario */
+
+.mundo3--formulario--container{
+    position: absolute;
+    z-index: 11;
+    width: 75vw;
+    height: 50vh;
+    background-color: hsla(0, 0%, 100%, 0.500);
+    top: 10vh;
+    border-radius: 10px;
+}
+
+.mundo3--icons-container{
+    position: absolute;
+    z-index: 11;
+    width: 75vw;
+    height: 25vh;
+    background-color: hsla(0, 0%, 100%, 0.500);
+    bottom: 4vh;
+    border-radius: 10px;
+}
+
+/* * Form */
+
+.form--container{
+    position: absolute;
+    width: 73vw;
+    height: 48vh;
+    left: 10px;
+    top: 10px;
+}
+
+.mundo3--title{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin-left: -20px;
+}
+
+.inputs-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+    width: 35vw;
+}
+
+.label{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.input{
+    width: 170px;
+    text-align: center;
+    height: 25px;
+    border-radius: 10px;
+    background-color:  rgba(0, 0, 139, 0.500);
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+.inputs-submit{
+    position: absolute;
+    bottom: 80px;
+    width: 80vw;
+}
+
+.submit{
+    position: absolute;
+    width: 75.5vw;
+    height: 35px;
+    left: -1.2vw;
+    bottom: -10vh;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 139, 0.500);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.inputs-textarea{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    gap: 20px;
+    right: 0;
+    top: -50px;
+    
+}
+
+.label-textarea{
+    font-family: cursive;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+} 
+
+.input-textarea{
+    width: 35vw;
+    height: 36vh;
+    border-radius: 10px;
+    background-color: rgba(6, 6, 218, 0.400);
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 15px;
+    overflow-y: scroll;
+    line-height: 30px;
+}
+
+/* * icons */
+
+.icons-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icon-img{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.bottom--icons-title{
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    bottom: 0;
+    left: 0;
+    font-size: 22px;
+    padding: 17px;
+    font-family: cursive;
+    font-weight: 1200;
+}
+
+.bottom--icons-title-top{
+    top: 0;
+}
+
